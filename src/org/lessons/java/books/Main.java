@@ -21,9 +21,8 @@ public class Main {
 		int n = 2;
 		Book[] libreria = new Book[n];
 		
-		for(int i = 0; i <= n; i++) {
-		
 			try {
+				for(int i = 0; i < n; i++) {
 				System.out.println("Dimmi il titolo del libro");
 				titolo = data.nextLine().toLowerCase().trim();
 				
@@ -33,7 +32,6 @@ public class Main {
 				}catch(Exception e) {
 					numeroPagine = 0;
 				}
-				
 				
 				System.out.println("Dimmi chi ha scritto questo libro");
 				autore = data.nextLine();
@@ -46,29 +44,19 @@ public class Main {
 				nuovoLibro.setAutore(autore);
 				nuovoLibro.setEditore(editore);
 			
+				libreria[i] = nuovoLibro;
+					
+					for(int j = 0; j < libreria.length;j++) {
+						System.out.println("La tua libreria presenta questi libri:" + " "+libreria[j]);
+					}
+				}
 				
-				nuovoLibro = libreria[i];
-				
-				
-
 			}catch(Exception e) {
 				System.out.println("errore di validazione, non è possibile istanziare un nuovo libro");
 				return;
 			}
-
-			
-		}
 		
 		data.close();
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 
