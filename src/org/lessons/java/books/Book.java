@@ -67,11 +67,9 @@ public class Book {
 		}
 	}
 
-
 	public String getEditore() {
 		return editore;
 	}
-
 
 	public void setEditore(String editore) {
 		this.editore = editore;
