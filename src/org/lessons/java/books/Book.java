@@ -47,7 +47,7 @@ public class Book {
 	}
 	
 	public void validePagine(int numeroPagine) throws Exception {
-		if(numeroPagine <= 0) {
+		if(numeroPagine == 0) {
 			throw new Exception();
 		}
 	}
@@ -62,7 +62,7 @@ public class Book {
 		this.autore = autore;
 	}
 	public void validateAutore(String autore) throws Exception {
-		if(autore.length()<=0) {
+		if(autore.length()==0) {
 			throw new Exception();
 		}
 	}
@@ -78,7 +78,7 @@ public class Book {
 	}
 	
 	public void validateEditore(String editore) throws Exception {
-		if(autore.length()<=0) {
+		if(autore.length()==0) {
 			throw new Exception();
 		}
 	}
