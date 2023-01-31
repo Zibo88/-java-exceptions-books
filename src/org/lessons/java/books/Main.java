@@ -54,10 +54,9 @@ public class Main {
 			}catch(Exception e) {
 				System.out.println("errore di validazione, non è possibile istanziare un nuovo libro");
 				return;
+			}finally {
+				data.close();
 			}
-		
-		data.close();
-		
 	}
 
 }
